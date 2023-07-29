@@ -1,0 +1,53 @@
+●Homebrewがインストールされてるかの確認
+brew -v
+
+●Homebrewをインストール
+https://brew.sh/index_ja
+
+●環境Pathを通す
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/hidet/.zprofile
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+brew -v
+
+●pyenvのインストール
+brew install pyenv
+
+pyenv -v
+
+●pyenvのPathを設定
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+
+echo 'export PATH="$PYENV_ROOT/shims:$PATH"' >> ~/.zshrc
+
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+
+source ~/.zshrc
+
+
+●Pythonのインストール
+
+インストールバージョンの確認
+pyenv install --list
+
+pyenv install 3.11.4
+
+pyenv versions
+
+●使用するPythonの設定
+
+pyenv global 3.11.4
+
+python -V
+
+●VSCodeをインストール
+brew install --cask visual-studio-code
+
+●VSCodeの拡張機能を追加
+
+・Japanese Language Pack for VS Code
+・Python(Pylance)
+・Code Runner
+・Indent-Rainbow
+・Python Indent
