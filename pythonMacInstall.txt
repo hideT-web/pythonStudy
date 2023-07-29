@@ -1,8 +1,11 @@
 ●Homebrewがインストールされてるかの確認
 brew -v
 
-●Homebrewをインストール
+●Homebrewのインストールページ
 https://brew.sh/index_ja
+
+●Homebrewのインストールコマンド
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ●環境Pathを通す
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/hidet/.zprofile
